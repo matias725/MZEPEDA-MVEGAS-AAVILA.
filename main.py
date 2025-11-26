@@ -226,7 +226,7 @@ class AppEcoTech:
             id_usuario = int(id_usuario)
             
             # buscar el usuario
-            usuario = self.gestor.buscar_usuario_por_id(id_usuario)
+            usuario = self.gestor.buscar_por_id(id_usuario)
             
             print(f"\nUsuario: {usuario.nombre_usuario}")
             print("deja en blanco si no quieres cambiar\n")
@@ -265,7 +265,7 @@ class AppEcoTech:
             id_usuario = int(id_usuario)
             
             # ver si existe
-            usuario = self.gestor.buscar_usuario_por_id(id_usuario)
+            usuario = self.gestor.buscar_por_id(id_usuario)
             
             # no te puedes eliminar a ti mismo
             if self.user_actual and usuario.id == self.user_actual.id:
